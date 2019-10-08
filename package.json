@@ -1,0 +1,42 @@
+{
+	"name": "paste-image-hardcode",
+	"displayName": "paste-image-hardcode",
+	"description": "Paste image directly from clipborad to markdown base64 encoded image format.",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/famiko/vscode-image-paste-hardcode.git"
+	  },
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.Paste"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.Paste",
+				"title": "Paste image."
+			}
+		]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.38.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.2.0"
+	}
+}
